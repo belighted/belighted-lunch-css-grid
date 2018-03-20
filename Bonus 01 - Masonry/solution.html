@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bonus 01 - Masonry</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="elem">
+            <p>1</p>
+        </div>
+        <div class="elem">
+            <p>2</p>
+        </div>
+        <div class="elem">
+            <p>3</p>
+        </div>
+        <div class="elem">
+            <p>4</p>
+        </div>
+        <div class="elem">
+            <p>5</p>
+        </div>
+        <div class="elem">
+            <p>6</p>
+        </div>
+        <div class="elem">
+            <p>7</p>
+        </div>
+        <div class="elem">
+            <p>8</p>
+        </div>
+        <div class="elem">
+            <p>9</p>
+        </div>
+        <div class="elem">
+            <p>10</p>
+        </div>
+        <div class="elem">
+            <p>11</p>
+        </div>
+        <div class="elem">
+            <p>12</p>
+        </div>
+        <div class="elem">
+            <p>13</p>
+        </div>
+        <div class="elem">
+            <p>14</p>
+        </div>
+        <div class="elem">
+            <p>15</p>
+        </div>
+        <div class="elem">
+            <p>16</p>
+        </div>
+        <div class="elem">
+            <p>17</p>
+        </div>
+        <div class="elem">
+            <p>18</p>
+        </div>
+        <div class="elem">
+            <p>19</p>
+        </div>
+        <div class="elem">
+            <p>20</p>
+        </div>
+        <div class="elem">
+            <p>21</p>
+        </div>
+        <div class="elem">
+            <p>22</p>
+        </div>
+        <div class="elem">
+            <p>23</p>
+        </div>
+        <div class="elem">
+            <p>24</p>
+        </div>
+        <div class="elem">
+            <p>25</p>
+        </div>
+        <div class="elem">
+            <p>26</p>
+        </div>
+        <div class="elem">
+            <p>27</p>
+        </div>
+        <div class="elem">
+            <p>28</p>
+        </div>
+        <div class="elem">
+            <p>29</p>
+        </div>
+        <div class="elem">
+            <p>30</p>
+        </div>
+        <div class="elem">
+            <p>31</p>
+        </div>
+        <div class="elem">
+            <p>32</p>
+        </div>
+        <div class="elem">
+            <p>33</p>
+        </div>
+        <div class="elem">
+            <p>34</p>
+        </div>
+        <div class="elem">
+            <p>35</p>
+        </div>
+        <div class="elem">
+            <p>36</p>
+        </div>
+        <div class="elem">
+            <p>37</p>
+        </div>
+        <div class="elem">
+            <p>38</p>
+        </div>
+        <div class="elem">
+            <p>39</p>
+        </div>
+        <div class="elem">
+            <p>40</p>
+        </div>
+        <div class="elem">
+            <p>41</p>
+        </div>
+        <div class="elem">
+            <p>42</p>
+        </div>
+        <div class="elem">
+            <p>43</p>
+        </div>
+        <div class="elem">
+            <p>44</p>
+        </div>
+        <div class="elem">
+            <p>45</p>
+        </div>
+        <div class="elem">
+            <p>46</p>
+        </div>
+        <div class="elem">
+            <p>47</p>
+        </div>
+        <div class="elem">
+            <p>48</p>
+        </div>
+        <div class="elem">
+            <p>49</p>
+        </div>
+        <div class="elem">
+            <p>50</p>
+        </div>
+        <div class="elem">
+            <p>51</p>
+        </div>
+        <div class="elem">
+            <p>52</p>
+        </div>
+        <div class="elem">
+            <p>53</p>
+        </div>
+        <div class="elem">
+            <p>54</p>
+        </div>
+        <div class="elem">
+            <p>55</p>
+        </div>
+        <div class="elem">
+            <p>56</p>
+        </div>
+        <div class="elem">
+            <p>57</p>
+        </div>
+        <div class="elem">
+            <p>58</p>
+        </div>
+        <div class="elem">
+            <p>59</p>
+        </div>
+        <div class="elem">
+            <p>60</p>
+        </div>
+        <div class="elem">
+            <p>61</p>
+        </div>
+        <div class="elem">
+            <p>62</p>
+        </div>
+        <div class="elem">
+            <p>63</p>
+        </div>
+        <div class="elem">
+            <p>64</p>
+        </div>
+        <div class="elem">
+            <p>65</p>
+        </div>
+        <div class="elem">
+            <p>66</p>
+        </div>
+        <div class="elem">
+            <p>67</p>
+        </div>
+        <div class="elem">
+            <p>68</p>
+        </div>
+        <div class="elem">
+            <p>69</p>
+        </div>
+        <div class="elem">
+            <p>70</p>
+        </div>
+    </div>
+    <style>
+        .grid {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-auto-flow: dense;
+        }
+
+        .elem {
+            display: grid;
+            grid-column: span 1;
+            align-items: center;
+            justify-items: center;
+            padding: 10px;
+        }
+        .elem:nth-child(3n) {
+            grid-column: span 2;
+        }
+        .elem:nth-child(5n) {
+            grid-column: span 3;
+        }
+        .elem:nth-child(4n) {
+            grid-row: span 3;
+        }
+        .elem:nth-child(7n) {
+            grid-column: span 4;
+        }
+        .elem:nth-child(9n) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</body>
+</html>

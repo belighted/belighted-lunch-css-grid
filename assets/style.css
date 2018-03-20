@@ -1,0 +1,33 @@
+:root {
+    --main-background: #F2F2F2;
+    --elem-background: #88C9EF;
+    --font-color: #212121;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: var(--main-background);
+    margin: 0;
+    padding: 40px;
+    color: var(--font-color);
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin :0;
+    background: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+.elem {
+    background: var(--elem-background);
+}

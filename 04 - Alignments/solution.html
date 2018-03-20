@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04 - Alignments</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="elem elem-1">
+            <p>1</p>
+        </div>
+        <div class="elem elem-2">
+            <p>2</p>
+        </div>
+        <div class="elem elem-3">
+            <p>3</p>
+        </div>
+        <div class="elem elem-4">
+            <p>4</p>
+        </div>
+        <div class="elem elem-5">
+            <p>5</p>
+        </div>
+        <div class="elem elem-6">
+            <p>6</p>
+        </div>
+        <div class="elem elem-7">
+            <p>7</p>
+        </div>
+        <div class="elem elem-8">
+            <p>8</p>
+        </div>
+        <div class="elem elem-9">
+            <p>9</p>
+        </div>
+    </div>
+    <style>
+        .grid {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+        }
+        .elem {
+            display: grid;
+            align-items: start;
+            justify-items: start;
+        }
+        .elem-2 {
+            justify-items: center;
+        }
+        .elem-3 {
+            justify-items: end;
+        }
+        .elem-4 {
+            align-items: center;
+        }
+        .elem-5 {
+            justify-items: center;
+            align-items: center;
+        }
+        .elem-6 {
+            justify-items: end;
+            align-items: center;
+        }
+        .elem-7 {
+            align-items: end;
+        }
+        .elem-8 {
+            justify-items: center;
+            align-items: end;
+        }
+        .elem-9 {
+            justify-items: end;
+            align-items: end;
+        }
+    </style>
+</body>
+</html>

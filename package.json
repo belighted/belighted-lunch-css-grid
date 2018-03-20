@@ -1,0 +1,23 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "CSS Grid talk examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-script-os",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 1348 --browser 'Firefox Developer Edition'"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "talk",
+    "belighted"
+  ],
+  "author": "Simon Henrotte",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "run-script-os": "^1.0.3"
+  }
+}

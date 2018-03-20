@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05 - Grid areas</title>
+</head>
+<body>
+    <header class="elem header">Header</header>
+    <aside class="elem sidebar">Sidebar</aside>
+    <main class="elem content">Content</main>
+    <footer class="elem footer">Footer</footer>
+    <style>
+        body {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 60px 1fr 50px;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+        }
+        .header {
+            grid-area: header;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .content {
+            grid-area: content;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</body>
+</html>

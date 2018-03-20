@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <title>CSS Grid - The layout</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title no-margin">CSS Grid</h1>
+        <aside>
+            <img src="./assets/images/profile-header.png" alt="User profile image" class="header-profile-image">
+        </aside>
+    </header>
+    <div class="main-title-container">
+        <h2 class="main-title no-margin">
+            CSS Grid: The layout
+        </h2>
+        <h3 class="main-sub-title">
+            Grids areas, responsive, ...
+        </h3>
+    </div>
+    <div class="article-information">
+        <ul>
+            <li>
+                <p class="aside-information-title no-margin bold">Read time</p>
+                <p class="aside-information-content no-margin">15 minutes</p>
+            </li>
+            <li>
+                <p class="aside-information-title no-margin bold">Level</p>
+                <p class="aside-information-content no-margin">Beginner</p>
+            </li>
+        </ul>
+    </div>
+    <article class="blog-post">
+        <p>
+            Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter banh mi, squid keffiyeh High Life Brooklyn twee craft beer tousled chillwave. PBR&B selfies chillwave, bespoke tote bag blog post-ironic. Single-origin coffee put a bird on it craft beer YOLO, Portland hella deep v Schlitz. Tumblr Bushwick post-ironic Thundercats. Vinyl 90's keytar, literally cardigan Williamsburg YOLO squid pickled Etsy salvia lo-fi locavore. Meh leggings retro narwhal Neutra.
+        </p>
+        <p class="img-holder">
+            <img src="./assets/images/smoke.jpg" alt="Smoky volcano">
+        </p>
+        <p>
+            Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter banh mi, squid keffiyeh High Life Brooklyn twee craft beer tousled chillwave. PBR&B selfies chillwave, bespoke tote bag blog post-ironic. Single-origin coffee put a bird on it craft beer YOLO, Portland hella deep v Schlitz. Tumblr Bushwick post-ironic Thundercats. Vinyl 90's keytar, literally cardigan Williamsburg YOLO squid pickled Etsy salvia lo-fi locavore. Meh leggings retro narwhal Neutra.
+        </p>
+        <p class=" quote-image img-holder">
+            <img src="./assets/images/volcano.jpg" alt="Volcano on fire">
+        </p>
+        <p class="quote">
+            <span>Raise your hand if you think CSS Grid is cool</span>
+        </p>
+        <p>
+            Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter banh mi, squid keffiyeh High Life Brooklyn twee craft beer tousled chillwave. PBR&B selfies chillwave, bespoke tote bag blog post-ironic. Single-origin coffee put a bird on it craft beer YOLO, Portland hella deep v Schlitz. Tumblr Bushwick post-ironic Thundercats. Vinyl 90's keytar, literally cardigan Williamsburg YOLO squid pickled Etsy salvia lo-fi locavore. Meh leggings retro narwhal Neutra.
+        </p>
+    </article>
+    <div class="author">
+        <img src="./assets/images/profile-header.png" alt="Author profile image" class="article-profile-image">
+        <p class="author-title bold">Written by</p>
+        <p class="author-name bold">Simon Henrotte</p>
+        <button class="share">
+            <img src="./assets/images/share.svg" alt="Share button image">
+        </button>
+    </div>
+    <div class="tags">
+        <h3 class="tags-title bold">Tags</h3>
+        <ul class="tags-list">
+            <li class="tags-list-item">
+                CSS
+            </li>
+            <li class="tags-list-item">
+                Grid
+            </li>
+            <li class="tags-list-item">
+                Layout
+            </li>
+        </ul>
+    </div>
+    <div class="article-navigation">
+        <div class="article-navigation-container">
+            <button class="article-navigation-button">
+                <img src="./assets/images/chevron-left.svg" alt="Go back">
+            </button>
+            <p class="article-navigation-title">
+                Previous Lesson
+            </p>
+            <p class="article-navigation-description">
+                Responsive without MQ
+            </p>
+        </div>
+        <div class="article-navigation-container">
+            <button class="article-navigation-button">
+                <img src="./assets/images/chevron-right.svg" alt="Go back">
+            </button>
+            <p class="article-navigation-title">
+                Next Lesson
+            </p>
+            <p class="article-navigation-description bold">
+                CSS Grid bonus
+            </p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h4 class="sidebar-title">
+            Course
+        </h4>
+        <label for="menu" class="menu-toggle">
+            <img src="./assets/images/menu.svg" alt="Menu">
+        </label>
+        <input type="checkbox" id="menu" style="display: none">
+        <ul class="sidebar-list">
+            <li>
+                <h4 class="sidebar-sub-title bold">
+                    Introduction
+                </h4>
+                <p class="sidebar-sub-description">
+                    Brief introduction about CSS Grid and the two dimensional layout system
+                </p>
+            </li>
+            <li>
+                <h4 class="sidebar-sub-title bold">
+                    Sizing
+                </h4>
+                <p class="sidebar-sub-description">
+                    How to size every element inside CSS Grid
+                </p>
+            </li>
+            <li>
+                <h4 class="sidebar-sub-title bold">
+                    Placements
+                </h4>
+                <p class="sidebar-sub-description">
+                    How to place your elements inside CSS Grid
+                </p>
+            </li>
+            <li>
+                <h4 class="sidebar-sub-title bold">
+                    Alignments
+                </h4>
+            </li>
+            <li>
+                <h4 class="sidebar-sub-title">
+                    Grid areas
+                </h4>
+            </li>
+            <li>
+                <h4 class="sidebar-sub-title">
+                    Responsive without MQ
+                </h4>
+            </li>
+            <li>
+                <h4 class="sidebar-sub-title">
+                    The layout
+                </h4>
+            </li>
+        </ul>
+    </div>
+    <div class="recommended-for-you">
+        <h3 class="recommended-for-you-title">
+            Recommended for you
+        </h3>
+        <ul class="recommended-for-you-list">
+            <li>
+                <p class="img-holder">
+                    <img src="./assets/images/the-floor-is-lava.jpg" alt="The floor is lava">
+                </p>
+                <div class="recommended-information">
+                    <h5 class="recommended-title">
+                        The floor is lava
+                    </h5>
+                    <p class="recommended-author">
+                        <img src="./assets/images/profile-header.png" alt="Author profile image" class="recommended-profile-image">
+                        <span>Simon Henrotte</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <p class="img-holder">
+                        <img src="./assets/images/css-grid-is-hot.jpg" alt="CSS Grid is hot">
+                </p>
+                <div class="recommended-information">
+                    <h5 class="recommended-title">
+                        CSS Grid is hot
+                    </h5>
+                    <p class="recommended-author">
+                        <img src="./assets/images/profile-header.png" alt="Author profile image" class="recommended-profile-image">
+                        <span>Simon Henrotte</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer class="footer">
+        &copy; Belighted - 2018 - All rights reserved
+    </footer>
+</body>
+</html>

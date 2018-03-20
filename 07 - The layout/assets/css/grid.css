@@ -1,0 +1,141 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main-title"
+        "article-information"
+        "blog"
+        "author"
+        "tags"
+        "navigation"
+        "sidebar"
+        "recommended"
+        "footer";
+}
+
+.site-header {
+    grid-area: header;
+}
+
+.main-title {
+    grid-area: main-title;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.article-information {
+    grid-area: article-information;
+}
+
+.blog-post {
+    grid-area: blog;
+}
+
+.author {
+    grid-area: author;
+}
+
+.tags {
+    grid-area: tags;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    align-content: start;
+}
+
+.article-navigation {
+    grid-area: navigation;
+}
+
+.recommended-for-you {
+    grid-area: recommended;
+}
+
+@media (min-width: 1024px) {
+    body {
+        grid-template-columns: 380px 1fr;
+        grid-template-areas:
+            "header header"
+            "sidebar main-title"
+            "sidebar article-information"
+            "sidebar blog"
+            "sidebar author"
+            "sidebar tags"
+            "sidebar navigation"
+            "sidebar recommended"
+            "sidebar footer";
+    }
+
+    .blog-post {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-post p {
+        grid-column: 1 / -1;
+    }
+
+    .blog-post .quote-image {
+        grid-column: 1 / span 1;
+    }
+
+    .blog-post .quote {
+        grid-column: 2 / span 1;
+        display: grid;
+        place-items: center;
+    }
+
+    .article-information ul {
+        grid-template-columns: auto auto;
+        grid-gap: 60px;
+        justify-content: start;
+    }
+
+    .article-navigation,
+    .recommended-for-you-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .article-navigation-container:last-child {
+        direction: rtl;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        grid-template-columns: 380px 1fr 365px;
+        grid-template-rows: auto;
+        grid-gap: 0 20px;
+        grid-template-areas:
+            "header header header"
+            "sidebar main-title article-information"
+            "sidebar blog tags"
+            "sidebar blog footer"
+            "sidebar author footer"
+            "sidebar navigation footer"
+            "sidebar recommended footer";
+        grid-auto-flow: row;
+    }
+
+    .article-information {
+        align-content: center;
+        display: grid;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .article-information ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        justify-content: start;
+    }
+}

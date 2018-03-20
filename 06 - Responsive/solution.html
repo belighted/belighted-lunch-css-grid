@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07 - Responsive</title>
+</head>
+<body>
+    <div class="grid">
+        <header class="elem">Header</header>
+        <aside class="elem">Sidebar</aside>
+        <main class="elem">Content</main>
+        <footer class="elem">Footer</footer>
+    </div>
+    <style>
+        .grid {
+            padding :0;
+            display: grid;
+            grid-gap: 20px;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "head"
+                "main"
+                "sidebar"
+                "foot";
+        }
+        header {
+            grid-area: head;
+        }
+        aside {
+            grid-area: sidebar;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: foot;
+        }
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: 100px 1fr;
+                grid-template-areas: 
+                    "head head"
+                    "sidebar main"
+                    "foot foot";
+            }
+        }
+    </style>
+</body>
+</html>

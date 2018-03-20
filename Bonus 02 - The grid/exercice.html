@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bonus 02 - The grid</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="col" style="--md-span: 4; --xl-span: 6;">1</div>
+        <div class="col" style="--md-span: 4; --xl-span:6;">
+        <div class="grid">
+            <div class="col" style="--md-span: 12; --xl-span:6;">2</div>
+            <div class="col" style="--md-span: 12; --xl-span:6;">2</div>
+        </div>
+        </div>
+        <div class="col" style="--md-span: 4">3</div>
+        <div class="col" style="--md-span: 4">4</div>
+        <div class="col" style="--md-span: 4">5</div>
+        <div class="col" style="--md-span: 4">6</div>
+        <div class="col" style="--md-span: 4">7</div>
+        <div class="col" style="--md-span: 4">8</div>
+        <div class="col" style="--md-span: 4">9</div>
+        <div class="col" style="--md-span: 4">10</div>
+        <div class="col" style="--md-span: 4">11</div>
+        <div class="col" style="--md-span: 4">12</div>
+    </div>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(var(--cols, 12), minmax(0, 1fr));
+            grid-gap: 10px 20px;
+        }
+
+        .grid .grid {
+            padding-left: -10px;
+            padding-right: -10px;
+        }
+
+        .col {
+            min-width: 0;
+            width: 100%;
+            grid-column: span var(--span, 12);
+        }
+
+        @media (min-width: 420px) {
+            .col {
+                grid-column: span var(--sm-span, 12);
+            }
+        }
+        @media (min-width: 768px) {
+            .col {
+                grid-column: span var(--md-span, 12);
+            }
+        }
+        @media (min-width: 1024px) {
+            .col {
+                grid-column: span var(--lg-span, 12);
+            }
+        }
+        @media (min-width: 1200px) {
+            .col {
+                grid-column: span var(--xl-span, 12);
+            }
+            }
+        .col {
+            background: #f1c40f;
+        }
+
+        .grid .grid .col {
+            background: tomato;
+        }
+    </style>
+</body>
+</html>
